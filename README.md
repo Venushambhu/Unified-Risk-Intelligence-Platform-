@@ -1,15 +1,16 @@
 💼 Unified Financial Risk Intelligence Platform
-🧠 Overview
+
+Overview :
 The Unified Financial Risk Intelligence Platform is an AI-powered system that combines Credit Risk, Fraud Risk, and Market Risk modeling into a single unified analytical framework.
 It leverages machine learning, anomaly detection, and time-series forecasting to provide a holistic risk index that helps financial institutions assess exposure and make informed lending and investment decisions.
 
 🧩 Project Highlights
 
-🔍 Credit Risk Model: Predicts loan default probability using supervised ML models (Logistic Regression, Random Forest).
-⚠️ Fraud Risk Model: Detects fraudulent or anomalous transactions using Isolation Forest and outlier scores.
-📈 Market Risk Model: Forecasts market volatility using ARIMA and Prophet on NIFTY-50 time series data.
-🧮 Unified Risk Index (URI): Weighted scoring metric combining results from all three models for overall financial exposure.
-📊 Streamlit Dashboard: Interactive, real-time analytics with SHAP-based explainability for model transparency.
+ Credit Risk Model: Predicts loan default probability using supervised ML models (Logistic Regression, Random Forest).
+Fraud Risk Model: Detects fraudulent or anomalous transactions using Isolation Forest and outlier scores.
+Market Risk Model: Forecasts market volatility using ARIMA and Prophet on NIFTY-50 time series data.
+Unified Risk Index (URI): Weighted scoring metric combining results from all three models for overall financial exposure.
+Streamlit Dashboard: Interactive, real-time analytics with SHAP-based explainability for model transparency.
 
 ⚙️ Tech Stack
 Programming: Python
@@ -17,20 +18,19 @@ Libraries: Pandas, NumPy, scikit-learn, Statsmodels, Prophet, Streamlit, Plotly,
 Tools: Git, Jupyter, Anaconda
 Datasets: credit risk (kaggle),  Fraud risk  (kaggle), Yahoo Finance Nifty-50 (Market)
 
-🔬 Model Components
-💳 Credit Risk Model
+Credit risk model
 
 Predicts default probability based on loan amount, income, credit history, and home ownership.
 Uses Logistic Regression with feature scaling and SMOTE balancing.
 Metrics: ROC-AUC, Precision, Recall, F1-score
 
-🕵️ Fraud Risk Model
+ Fraud Risk Model
 
 Uses Isolation Forest to detect anomalous transactions.
 Calculates a fraud risk score based on model decision function.
 Metrics: Precision, Recall, Confusion Matrix
 
-📊 Market Risk Model
+Market Risk Model
 
 Time-series forecasting with ARIMA and Prophet for volatility estimation.
 Generates rolling volatility and daily Market Risk Scores.
@@ -40,9 +40,6 @@ Metrics: RMSE, MAE
 URI=0.4×CreditRisk+0.4×FraudRisk+0.2×MarketRisk
 
 Provides an overall exposure rating for financial institutions based on weighted model outputs.
-
-🚀 Setup & Installation
-# Clone the repository
 
 📊 Dashboard Features
 
